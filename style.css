@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+}
+
+header {
+  height: 70px;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(19, 19, 19, 0.267);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-container {
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  padding: 0 12px;
+}
+
+.ancor-card {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+.header-container h2 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.Ahead {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+.header-container p {
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.Dark-Mode-Toggle {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.Dark-Mode-Toggle img {
+  height: 20px;
+}
+
+.box {
+  height: 320px;
+  width: 240px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px rgba(19, 19, 19, 0.212);
+  transition: transform 250ms ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.07);
+}
+
+.flag-box {
+  height: 155px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flag-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-details h3 {
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.text-details {
+  height: 150px;
+  width: 100%;
+  padding: 28px 0 0 18px;
+}
+
+.text-details-p {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+  overflow-wrap: break-word;
+}
+
+.text-details-p span {
+  font-weight: 400;
+  color: hsla(0, 0%, 51%, 0.856);
+}
+
+/* dark mode */
+.dark-mode {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+.dark-header {
+  background-color: hsl(209, 23%, 22%);
+}
+.dark {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode .region-filter {
+  background-color: hsl(207, 26%, 17%);
+
+  color: hsl(0, 0%, 100%);
+}
+
+.easy-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding: 0 80px;
+  gap: 20px;
+  width: 100%;
+  background-color: inherit;
+  color: inherit;
+}
+
+.search-div {
+  width: 100%;
+  max-width: 480px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  padding-left: 23px;
+  box-shadow: 1px 1px 10px rgba(19, 19, 19, 0.144);
+}
+
+.fa {
+  color: inherit;
+}
+
+.search-input {
+  height: 48px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: inherit;
+  background-color: inherit;
+}
+.reason-div {
+  width: 180px;
+}
+
+.region-filter {
+  height: 48px;
+  width: 100%;
+  padding: 0 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  box-shadow: 1px 1px 10px rgba(19, 19, 19, 0.144);
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Dark-header {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Dark-Mode-Toggle {
+  transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 690px) {
+  .easy-div {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .easy-div {
+    display: block;
+    padding: 0 10px;
+  }
+  .reason-div {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main {
+    padding: 0 28px;
+  }
+  .header-container h2 {
+    font-size: 18px;
+  }
+  .header-container p {
+    font-weight: bolder;
+    font-size: 13px;
+  }
+}
